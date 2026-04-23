@@ -1508,6 +1508,7 @@ html,body{overflow-x:hidden;
     body{
         position: relative;
         background-color: #f0f0f0;
+        z-index: -2;
     }
     .mobile-bg-overlay {
         position: fixed;
