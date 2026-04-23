@@ -1510,6 +1510,6 @@ html,body{overflow-x:hidden;
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    width: 100%;
+    z-index: -1;
     }
 }
