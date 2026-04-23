@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="LokiBarbers – Premium barbershop in Accra, Ghana. Clean cuts, sharp fades, beard trims. Book your appointment today.">
+    <meta name="keywords" content="barbershop accra, haircut ghana, fade accra, loki barbers, best barber accra">
+    <meta name="theme-color" content="#FFD700">
+
+```
+<!-- Open Graph for WhatsApp/Facebook sharing -->
+<meta property="og:title" content="LokiBarbers – Clean Cuts. Sharp Style.">
+<meta property="og:description" content="Premium barbershop in Accra, Ghana. Book your appointment today.">
+<meta property="og:image" content="images/hero.jpg">
+<meta property="og:type" content="website">
+
+<!-- Schema.org Local Business -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HairSalon",
+  "name": "LokiBarbers",
+  "address": { "@type": "PostalAddress", "addressLocality": "Accra", "addressCountry": "GH" },
+  "telephone": "+233592640100",
+  "openingHours": "Mo-Sa 08:00-20:00",
+  "priceRange": "GH₵30–GH₵70"
+}
+</script>
+
+<title>LokiBarbers – Clean Cuts. Sharp Style.</title>
+
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Playfair+Display:ital,wght@0,700;1,400&family=Bebas+Neue&display=swap" rel="stylesheet">
+<!-- Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<!-- AOS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+<!-- Swiper -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+<!-- GLightbox -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+
+<link rel="stylesheet" href="style.css">
+```
+
+</head>
+<body>
+
+<!-- Skip to main content (accessibility) -->
+
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<!-- Grain overlay -->
+
+<div class="grain"></div>
+
+<!-- Scroll progress bar -->
+
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+<!-- Custom Cursor -->
+
+<div class="cursor" aria-hidden="true"></div>
+<div class="cursor-follower" aria-hidden="true"></div>
+
+<!-- Video Background (desktop only) -->
+
+<video autoplay muted loop playsinline id="global-video" preload="none" aria-hidden="true">
+    <source src="videos/barbershop.mp4" type="video/mp4">
+</video>
+
+<!-- Loading Screen -->
+
+<div id="loader" role="status" aria-label="Loading LokiBarbers">
+    <div class="loader-content">
+        <div class="loader-logo">LOKI<span>BARBERS</span></div>
+        <div class="loader-bar"><div class="loader-progress"></div></div>
+        <p>Crafting Your Experience...</p>
+        <div class="loader-scissors"><i class="fas fa-cut"></i></div>
+    </div>
+</div>
+
+<!-- Navigation -->
+
+<nav id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="logo" role="banner" tabindex="0">LOKI<span>BARBERS</span></div>
+    <ul class="nav-links" role="menubar">
+        <li role="none"><a href="#home" role="menuitem">Home</a></li>
+        <li role="none"><a href="#services" role="menuitem">Services</a></li>
+        <li role="none"><a href="#barbers" role="menuitem">Barbers</a></li>
+        <li role="none"><a href="#gallery" role="menuitem">Gallery</a></li>
+        <li role="none"><a href="#contact" role="menuitem">Contact</a></li>
+    </ul>
+    <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+        <i class="fas fa-bars" aria-hidden="true"></i>
+    </button>
+</nav>
+
+<!-- HERO -->
+
+<main id="main-content">
+<section id="home" aria-label="Hero section">
+    <div class="hero-content">
+        <div class="hero-badge">✦ Est. 2019 · Accra, Ghana ✦</div>
+        <h1 class="hero-title">
+            <span class="split-text">Clean</span>
+            <span class="split-text hero-gold">Cuts.</span>
+            <br>
+            <span class="split-text">Sharp</span>
+            <span class="split-text hero-gold">Style.</span>
+        </h1>
+        <p class="hero-sub" aria-live="polite"></p>
+        <div class="hero-actions">
+            <button class="btn btn-primary" onclick="openBooking()" aria-label="Book an appointment">
+                <i class="fas fa-calendar-check" aria-hidden="true"></i> Book Now
+            </button>
+            <a href="#services" class="btn btn-outline" aria-label="Explore our services">Explore Services</a>
+        </div>
+        <div class="hero-scroll-hint" aria-hidden="true">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </div>
+    <div id="particles" aria-hidden="true"></div>
+    <div class="hero-3d-orb" aria-hidden="true"></div>
+</section>
+
+<!-- STATS -->
+
+<section id="stats" aria-label="Our achievements">
+    <div class="stats-grid">
+        <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+            <div class="stat-icon"><i class="fas fa-users" aria-hidden="true"></i></div>
+            <h3 class="counter" data-target="500" aria-label="500 plus happy clients">0</h3>
+            <p>Happy Clients</p>
+        </div>
+        <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+            <div class="stat-icon"><i class="fas fa-award" aria-hidden="true"></i></div>
+            <h3 class="counter" data-target="5" aria-label="5 plus years experience">0</h3>
+            <p>Years Experience</p>
+        </div>
+        <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+            <div class="stat-icon"><i class="fas fa-cut" aria-hidden="true"></i></div>
+            <h3 class="counter" data-target="1000" aria-label="1000 plus haircuts done">0</h3>
+            <p>Haircuts Done</p>
+        </div>
+        <div class="stat-item" data-aos="fade-up" data-aos-delay="400">
+            <div class="stat-icon"><i class="fas fa-star" aria-hidden="true"></i></div>
+            <h3 class="counter" data-target="100" aria-label="100 plus five star reviews">0</h3>
+            <p>5 Star Reviews</p>
+        </div>
+    </div>
+</section>
+
+<!-- SERVICES -->
+
+<section id="services" aria-label="Our services">
+    <div class="section-header">
+        <span class="section-tag" data-aos="fade-up">What We Do</span>
+        <h2 data-aos="fade-up">Our <span>Services</span></h2>
+        <p class="section-sub" data-aos="fade-up">Premium grooming for every gentleman</p>
+    </div>
+    <div class="services-grid">
+        <div class="service-card tilt-card" data-aos="fade-up" data-aos-delay="100" role="article" aria-label="Fresh Cut service">
+            <div class="card-glow"></div>
+            <div class="service-icon-wrap"><i class="fas fa-cut" aria-hidden="true"></i></div>
+            <h3>Fresh Cut</h3>
+            <p>Clean precise haircut tailored to your unique style and face shape</p>
+            <p class="price" aria-label="Price: 30 Ghana Cedis">GH₵ 30</p>
+            <button class="service-book-btn" onclick="openBooking()" aria-label="Book Fresh Cut">Book This →</button>
+        </div>
+        <div class="service-card tilt-card" data-aos="fade-up" data-aos-delay="200" role="article" aria-label="Fade service">
+            <div class="card-glow"></div>
+            <div class="service-icon-wrap"><i class="fas fa-magic" aria-hidden="true"></i></div>
+            <h3>Fade</h3>
+            <p>Sharp professional fade styles that turn heads everywhere you go</p>
+            <p class="price" aria-label="Price: 40 Ghana Cedis">GH₵ 40</p>
+            <button class="service-book-btn" onclick="openBooking()" aria-label="Book Fade">Book This →</button>
+        </div>
+        <div class="service-card tilt-card" data-aos="fade-up" data-aos-delay="300" role="article" aria-label="Beard Trim service">
+            <div class="card-glow"></div>
+            <div class="service-icon-wrap"><i class="fas fa-star" aria-hidden="true"></i></div>
+            <h3>Beard Trim</h3>
+            <p>Professional beard shaping, lining and conditioning treatment</p>
+            <p class="price" aria-label="Price: 20 Ghana Cedis">GH₵ 20</p>
+            <button class="service-book-btn" onclick="openBooking()" aria-label="Book Beard Trim">Book This →</button>
+        </div>
+        <div class="service-card tilt-card featured-service" data-aos="fade-up" data-aos-delay="400" role="article" aria-label="VIP Package service">
+            <div class="featured-badge">⭐ VIP</div>
+            <div class="card-glow"></div>
+            <div class="service-icon-wrap"><i class="fas fa-crown" aria-hidden="true"></i></div>
+            <h3>VIP Package</h3>
+            <p>Full luxury grooming experience — cut, beard, hot towel and more</p>
+            <p class="price" aria-label="Price: 70 Ghana Cedis">GH₵ 70</p>
+            <button class="service-book-btn" onclick="openBooking()" aria-label="Book VIP Package">Book This →</button>
+        </div>
+    </div>
+</section>
+
+<!-- BEFORE & AFTER SLIDER -->
+
+<section id="transformation" aria-label="Before and after transformations">
+    <div class="section-header">
+        <span class="section-tag" data-aos="fade-up">The Proof</span>
+        <h2 data-aos="fade-up">Before <span>&</span> After</h2>
+        <p class="section-sub" data-aos="fade-up">Drag to reveal the transformation</p>
+    </div>
+    <div class="ba-container" data-aos="fade-up">
+        <div class="ba-slider" id="baSlider" role="img" aria-label="Before and after haircut comparison slider">
+            <div class="ba-before">
+                <img src="images/before .jpg" alt="Before haircut" loading="lazy">
+                <span class="ba-label">Before</span>
+            </div>
+            <div class="ba-after">
+                <img src="images/after.jpg" alt="After haircut at LokiBarbers" loading="lazy">
+                <span class="ba-label">After</span>
+            </div>
+            <div class="ba-handle" aria-label="Drag to compare" role="slider" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
+                <div class="ba-handle-circle">
+                    <i class="fas fa-chevron-left" aria-hidden="true"></i>
+                    <i class="fas fa-chevron-right" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- MEET THE BARBERS -->
+
+<section id="barbers" aria-label="Meet our barbers">
+    <div class="section-header">
+        <span class="section-tag" data-aos="fade-up">The Team</span>
+        <h2 data-aos="fade-up">Meet The <span>Barbers</span></h2>
+        <p class="section-sub" data-aos="fade-up">Masters of their craft</p>
+    </div>
+    <div class="barbers-grid">
+        <div class="barber-card tilt-card" data-aos="fade-up" data-aos-delay="100" role="article">
+            <div class="barber-img-wrap">
+                <img src="images/gallery7.PNG" alt="Loki - Master Barber at LokiBarbers" loading="lazy">
+                <div class="barber-overlay">
+                    <div class="barber-social" aria-label="Loki's social media">
+                        <a href="#" aria-label="Loki on Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="Loki on TikTok"><i class="fab fa-tiktok" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="barber-info">
+                <h3>Loki</h3>
+                <span class="barber-title">Master Barber · Founder</span>
+                <p>Specialist in fades, line-ups and creative designs. 5+ years crafting excellence.</p>
+                <div class="barber-skills">
+                    <span>Fades</span><span>Designs</span><span>Beard</span>
+                </div>
+            </div>
+        </div>
+        <div class="barber-card tilt-card" data-aos="fade-up" data-aos-delay="200" role="article">
+            <div class="barber-img-wrap">
+                <img src="images/gallery8.JPG" alt="Kwame - Senior Barber at LokiBarbers" loading="lazy">
+                <div class="barber-overlay">
+                    <div class="barber-social" aria-label="Kwame's social media">
+                        <a href="#" aria-label="Kwame on Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="Kwame on TikTok"><i class="fab fa-tiktok" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="barber-info">
+                <h3>Kwame</h3>
+                <span class="barber-title">Senior Barber</span>
+                <p>Clean cuts and classic styles. Known for the sharpest line-ups in Accra.</p>
+                <div class="barber-skills">
+                    <span>Line-ups</span><span>Classic</span><span>VIP</span>
+                </div>
+            </div>
+        </div>
+        <div class="barber-card tilt-card" data-aos="fade-up" data-aos-delay="300" role="article">
+            <div class="barber-img-wrap">
+                <img src="images/gallery9.JPG" alt="Ama - Style Specialist at LokiBarbers" loading="lazy">
+                <div class="barber-overlay">
+                    <div class="barber-social" aria-label="Ama's social media">
+                        <a href="#" aria-label="Ama on Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="Ama on TikTok"><i class="fab fa-tiktok" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="barber-info">
+                <h3>Ama</h3>
+                <span class="barber-title">Style Specialist</span>
+                <p>Creative cuts, color and texture work. Pushing boundaries of modern barbering.</p>
+                <div class="barber-skills">
+                    <span>Creative</span><span>Color</span><span>Texture</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PRICING -->
+
+<section id="pricing" aria-label="Our pricing">
+    <div class="section-header">
+        <span class="section-tag" data-aos="fade-up">Transparent</span>
+        <h2 data-aos="fade-up">Our <span>Pricing</span></h2>
+        <p class="section-sub" data-aos="fade-up">No hidden fees. Ever.</p>
+    </div>
+    <div class="pricing-grid">
+        <div class="pricing-card tilt-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="pricing-header">
+                <h3>Basic</h3>
+                <div class="price-amount">
+                    <span class="currency">GH₵</span>
+                    <span class="amount">30</span>
+                </div>
+            </div>
+            <ul class="pricing-features">
+                <li><i class="fas fa-check" aria-hidden="true"></i> Fresh Haircut</li>
+                <li><i class="fas fa-check" aria-hidden="true"></i> Hair Wash</li>
+                <li><i class="fas fa-check" aria-hidden="true"></i> Styling</li>
+                <li class="disabled"><i class="fas fa-times" aria-hidden="true"></i> Beard Trim</li>
+                <li class="disabled"><i class="fas fa-times" aria-hidden="true"></i> Hot Towel</li>
+            </ul>
+            <button onclick="openBooking()" class="pricing-btn" aria-label="Book Basic package">Book Now</button>
+        </div>
+        <div class="pricing-card tilt-card featured" data-aos="fade-up" data-aos-delay="200">
+            <div class="popular-badge">Most Popular</div>
+            <div class="pricing-header">
+                <h3>Standard</h3>
+                <div class="price-amount">
+                    <span class="currency">GH₵</span>
+                    <span class="amount">40</span>
+                </div>
+            </div>
+            <ul class="pricing-features">
+                <li><i class="fas fa-check" aria-hidden="true"></i> Fresh Haircut</li>
+                <li><i class="fas fa-check" aria-hidden="true"></i> Hair Wash</li>
+                <li><i class="fas fa-check" aria-hidden="true"></i> Fade Style</li>
+                <li><i class="fas fa-check" aria-hidden="true"></i> Beard Trim</li>
+                <li class="disabled"><i class="fas fa-times" aria-hidden="true"></i> Hot Towel</li>
+            </ul>
+            <button onclick="openBooking()" class="pricing-btn" aria-label="Book Standard package">Book Now</button>
+        </div>
+        <div class="pricing-card tilt-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="pricing-header">
+                <h3>VIP</h3>
+                <div class="price-amount">
+                    <span class="currency">GH₵</span>
+                    <span class="amount">70</span>
+                </div>
+            </div>
+            <ul class="pricing-features">
+                <li><i class="fas fa-check" aria-hidden="true"></i> Fresh Haircut</li>
+                <li><i class="fas fa-check" aria-hidden="true"></i> Hair Wash</li>
+                <li><i class="fas fa-check" aria-hidden="true"></i> Fade Style</li>
+                <li><i class="fas fa-check" aria-hidden="true"></i> Beard Trim</li>
+                <li><i class="fas fa-check" aria-hidden="true"></i> Hot Towel</li>
+            </ul>
+            <button onclick="openBooking()" class="pricing-btn" aria-label="Book VIP package">Book Now</button>
+        </div>
+    </div>
+</section>
+
+<!-- GALLERY with lightbox -->
+
+<section id="gallery" aria-label="Our work gallery">
+    <div class="section-header">
+        <span class="section-tag" data-aos="fade-up">Portfolio</span>
+        <h2 data-aos="fade-up">Our <span>Gallery</span></h2>
+        <p class="section-sub" data-aos="fade-up">Every cut tells a story</p>
+    </div>
+    <div class="gallery-grid">
+        <a href="images/gallery1.jpg" class="gallery-item glightbox" data-aos="fade-up" data-aos-delay="100" data-gallery="lokibarbers" data-title="Fresh Cut" aria-label="View Fresh Cut photo">
+            <img src="images/gallery1.jpg" alt="Fresh Cut by LokiBarbers" loading="lazy">
+            <div class="gallery-overlay"><p>Fresh Cut</p><i class="fas fa-expand" aria-hidden="true"></i></div>
+        </a>
+        <a href="images/gallery2.jpg" class="gallery-item glightbox" data-aos="fade-up" data-aos-delay="200" data-gallery="lokibarbers" data-title="Fade Style" aria-label="View Fade Style photo">
+            <img src="images/gallery2.jpg" alt="Fade Style by LokiBarbers" loading="lazy">
+            <div class="gallery-overlay"><p>Fade Style</p><i class="fas fa-expand" aria-hidden="true"></i></div>
+        </a>
+        <a href="images/gallery3.jpg" class="gallery-item glightbox" data-aos="fade-up" data-aos-delay="300" data-gallery="lokibarbers" data-title="Beard Trim" aria-label="View Beard Trim photo">
+            <img src="images/gallery3.jpg" alt="Beard Trim by LokiBarbers" loading="lazy">
+            <div class="gallery-overlay"><p>Beard Trim</p><i class="fas fa-expand" aria-hidden="true"></i></div>
+        </a>
+        <a href="images/gallery4.jpg" class="gallery-item glightbox" data-aos="fade-up" data-aos-delay="400" data-gallery="lokibarbers" data-title="VIP Package" aria-label="View VIP Package photo">
+            <img src="images/gallery4.jpg" alt="VIP Package by LokiBarbers" loading="lazy">
+            <div class="gallery-overlay"><p>VIP Package</p><i class="fas fa-expand" aria-hidden="true"></i></div>
+        </a>
+        <a href="images/gallery5.jpg" class="gallery-item glightbox" data-aos="fade-up" data-aos-delay="500" data-gallery="lokibarbers" data-title="Line Up" aria-label="View Line Up photo">
+            <img src="images/gallery5.jpg" alt="Line Up by LokiBarbers" loading="lazy">
+            <div class="gallery-overlay"><p>Line Up</p><i class="fas fa-expand" aria-hidden="true"></i></div>
+        </a>
+        <a href="images/gallery6.jpg" class="gallery-item glightbox" data-aos="fade-up" data-aos-delay="600" data-gallery="lokibarbers" data-title="Design Cut" aria-label="View Design Cut photo">
+            <img src="images/gallery6.jpg" alt="Design Cut by LokiBarbers" loading="lazy">
+            <div class="gallery-overlay"><p>Design Cut</p><i class="fas fa-expand" aria-hidden="true"></i></div>
+        </a>
+    </div>
+</section>
+
+<!-- TESTIMONIALS SLIDER -->
+
+<section id="testimonials" aria-label="Client testimonials">
+    <div class="section-header">
+        <span class="section-tag" data-aos="fade-up">Reviews</span>
+        <h2 data-aos="fade-up">What Clients <span>Say</span></h2>
+        <p class="section-sub" data-aos="fade-up">Real reviews from real clients</p>
+    </div>
+    <div class="swiper testimonials-swiper" data-aos="fade-up" role="region" aria-label="Testimonials carousel">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="testimonial-card">
+                    <div class="quote-icon" aria-hidden="true">"</div>
+                    <div class="stars" aria-label="5 stars">
+                        <i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i>
+                        <i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i>
+                        <i class="fas fa-star" aria-hidden="true"></i>
+                    </div>
+                    <p>"Best barbershop in Accra! Clean cuts every time. I always leave looking sharp and confident."</p>
+                    <div class="client">
+                        <div class="client-avatar" aria-hidden="true">K</div>
+                        <div><h4>Kwame A.</h4><span>Regular Client · Accra</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="testimonial-card">
+                    <div class="quote-icon" aria-hidden="true">"</div>
+                    <div class="stars" aria-label="5 stars">
+                        <i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i>
+                        <i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i>
+                        <i class="fas fa-star" aria-hidden="true"></i>
+                    </div>
+                    <p>"The VIP package is worth every pesewa. Best grooming experience in all of Accra!"</p>
+                    <div class="client">
+                        <div class="client-avatar" aria-hidden="true">E</div>
+                        <div><h4>Emmanuel O.</h4><span>Regular Client · East Legon</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="testimonial-card">
+                    <div class="quote-icon" aria-hidden="true">"</div>
+                    <div class="stars" aria-label="5 stars">
+                        <i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i>
+                        <i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i>
+                        <i class="fas fa-star" aria-hidden="true"></i>
+                    </div>
+                    <p>"Amazing fade every single time. The barbers really know their craft. My go-to spot!"</p>
+                    <div class="client">
+                        <div class="client-avatar" aria-hidden="true">A</div>
+                        <div><h4>Amos K.</h4><span>Regular Client · Tema</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="testimonial-card">
+                    <div class="quote-icon" aria-hidden="true">"</div>
+                    <div class="stars" aria-label="5 stars">
+                        <i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i>
+                        <i class="fas fa-star" aria-hidden="true"></i><i class="fas fa-star" aria-hidden="true"></i>
+                        <i class="fas fa-star" aria-hidden="true"></i>
+                    </div>
+                    <p>"Walked in looking rough, walked out looking like a whole new man. Loki is a legend!"</p>
+                    <div class="client">
+                        <div class="client-avatar" aria-hidden="true">D</div>
+                        <div><h4>Daniel M.</h4><span>Regular Client · Kumasi</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination" aria-label="Testimonial pagination"></div>
+        <div class="swiper-button-prev" aria-label="Previous testimonial"></div>
+        <div class="swiper-button-next" aria-label="Next testimonial"></div>
+    </div>
+</section>
+
+<!-- ABOUT -->
+
+<section id="about" aria-label="About LokiBarbers">
+    <div class="about-content" data-aos="fade-right">
+        <span class="section-tag">Our Story</span>
+        <h2>Why Choose <span>LokiBarbers?</span></h2>
+        <p>At LokiBarbers we believe a great haircut is more than just style — it's confidence. Our barbers combine precision, experience, and modern techniques to deliver sharp fades, clean cuts, and premium grooming services.</p>
+        <ul class="about-list">
+            <li><i class="fas fa-check" aria-hidden="true"></i> Professional certified barbers</li>
+            <li><i class="fas fa-check" aria-hidden="true"></i> Premium grooming products</li>
+            <li><i class="fas fa-check" aria-hidden="true"></i> Clean modern environment</li>
+            <li><i class="fas fa-check" aria-hidden="true"></i> Affordable transparent pricing</li>
+            <li><i class="fas fa-check" aria-hidden="true"></i> Walk-ins welcome</li>
+        </ul>
+        <div class="trust-badges" aria-label="Trust indicators">
+            <div class="trust-badge"><i class="fas fa-shield-alt" aria-hidden="true"></i><span>100% Satisfaction</span></div>
+            <div class="trust-badge"><i class="fas fa-star" aria-hidden="true"></i><span>5 Star Rated</span></div>
+            <div class="trust-badge"><i class="fas fa-certificate" aria-hidden="true"></i><span>Certified Barbers</span></div>
+        </div>
+        <button class="btn btn-primary" onclick="openBooking()" aria-label="Book an appointment">Book Now</button>
+    </div>
+    <div class="about-image-container" data-aos="fade-left">
+        <img src="images/about.jpg" alt="LokiBarbers interior and team" loading="lazy">
+        <div class="about-img-badge" aria-hidden="true">
+            <span class="badge-number">5+</span>
+            <span class="badge-text">Years of Excellence</span>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ -->
+
+<section id="faq" aria-label="Frequently asked questions">
+    <div class="section-header">
+        <span class="section-tag" data-aos="fade-up">FAQ</span>
+        <h2 data-aos="fade-up">Common <span>Questions</span></h2>
+        <p class="section-sub" data-aos="fade-up">Everything you need to know</p>
+    </div>
+    <div class="faq-list" data-aos="fade-up">
+        <div class="faq-item" role="listitem">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq1">
+                Do you accept walk-ins?
+                <i class="fas fa-chevron-down" aria-hidden="true"></i>
+            </button>
+            <div class="faq-answer" id="faq1" role="region">
+                <p>Yes! Walk-ins are always welcome. However we recommend booking in advance to guarantee your preferred time and barber.</p>
+            </div>
+        </div>
+        <div class="faq-item" role="listitem">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq2">
+                How long does a haircut take?
+                <i class="fas fa-chevron-down" aria-hidden="true"></i>
+            </button>
+            <div class="faq-answer" id="faq2" role="region">
+                <p>A standard fresh cut takes about 30-45 minutes. The VIP package takes approximately 60-75 minutes for the full experience.</p>
+            </div>
+        </div>
+        <div class="faq-item" role="listitem">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq3">
+                What payment methods do you accept?
+                <i class="fas fa-chevron-down" aria-hidden="true"></i>
+            </button>
+            <div class="faq-answer" id="faq3" role="region">
+                <p>We accept cash, MTN Mobile Money, Vodafone Cash, AirtelTigo Money and bank transfers. No hidden charges.</p>
+            </div>
+        </div>
+        <div class="faq-item" role="listitem">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq4">
+                Can I choose my barber?
+                <i class="fas fa-chevron-down" aria-hidden="true"></i>
+            </button>
+            <div class="faq-answer" id="faq4" role="region">
+                <p>Absolutely! When booking mention your preferred barber and we will do our best to accommodate your request.</p>
+            </div>
+        </div>
+        <div class="faq-item" role="listitem">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq5">
+                Do you cater for kids?
+                <i class="fas fa-chevron-down" aria-hidden="true"></i>
+            </button>
+            <div class="faq-answer" id="faq5" role="region">
+                <p>Yes! Kids cuts are available at a special reduced price. Our barbers are patient and experienced with younger clients.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact" aria-label="Contact us">
+    <div class="section-header">
+        <span class="section-tag" data-aos="fade-up">Find Us</span>
+        <h2 data-aos="fade-up">Visit <span>Us</span></h2>
+        <p class="section-sub" data-aos="fade-up">We are ready to serve you</p>
+    </div>
+    <div class="contact-grid">
+        <a href="https://maps.google.com" target="_blank" rel="noopener" class="contact-card" data-aos="fade-up" data-aos-delay="100" aria-label="View location on Google Maps">
+            <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+            <h3>Location</h3>
+            <p>Accra, Ghana</p>
+        </a>
+        <a href="tel:+233541737618" class="contact-card" data-aos="fade-up" data-aos-delay="200" aria-label="Call us">
+            <i class="fas fa-phone" aria-hidden="true"></i>
+            <h3>Phone</h3>
+            <p>+233 592 640 100 </p>
+        </a>
+        <div class="contact-card" data-aos="fade-up" data-aos-delay="300" aria-label="Opening hours">
+            <i class="fas fa-clock" aria-hidden="true"></i>
+            <h3>Hours</h3>
+            <p>Mon–Sat: 8am–8pm</p>
+        </div>
+        <a href="https://wa.me/233592640100" target="_blank" rel="noopener" class="contact-card" data-aos="fade-up" data-aos-delay="400" aria-label="Chat on WhatsApp">
+            <i class="fab fa-whatsapp" aria-hidden="true"></i>
+            <h3>WhatsApp</h3>
+            <p>Chat with us now</p>
+        </a>
+    </div>
+</section>
+</main>
+
+<!-- FOOTER -->
+
+<footer role="contentinfo">
+    <div class="footer-content">
+        <div class="logo">LOKI<span>BARBERS</span></div>
+        <p>Clean Cuts. Sharp Style. Confidence Every Day.</p>
+        <nav class="social-links" aria-label="Social media links">
+            <a href="#" aria-label="Follow us on Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+            <a href="#" aria-label="Follow us on Facebook"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+            <a href="#" aria-label="Follow us on TikTok"><i class="fab fa-tiktok" aria-hidden="true"></i></a>
+            <a href="https://wa.me/233592640100" aria-label="Chat on WhatsApp"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+        </nav>
+    </div>
+    <p class="footer-bottom">© 2026 LokiBarbers. All rights reserved. | Crafted with ❤ in Accra</p>
+</footer>
+
+<!-- Sticky Book Button -->
+
+<div class="sticky-book" onclick="openBooking()" role="button" tabindex="0" aria-label="Open booking modal">
+    <div><i class="fas fa-calendar-check" aria-hidden="true"></i><span>Book Now</span></div>
+</div>
+
+<!-- WhatsApp Float Button -->
+
+<a href="https://wa.me/233592640100" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Chat with us on WhatsApp">
+    <i class="fab fa-whatsapp" aria-hidden="true"></i>
+    <span class="wa-tooltip">Chat with us!</span>
+</a>
+
+<!-- Back to Top -->
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-arrow-up" aria-hidden="true"></i>
+</button>
+
+<!-- Booking Modal -->
+
+<div id="booking-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2 id="modal-title">Book <span>Appointment</span></h2>
+            <button class="close-modal" onclick="closeBooking()" aria-label="Close booking modal">
+                <i class="fas fa-times" aria-hidden="true"></i>
+            </button>
+        </div>
+        <div class="modal-body">
+            <div class="form-group">
+                <label for="client-name">Your Name</label>
+                <input type="text" id="client-name" placeholder="Enter your name" autocomplete="name" required>
+            </div>
+            <div class="form-group">
+                <label for="client-phone">Phone Number</label>
+                <input type="tel" id="client-phone" placeholder="Enter your phone number" autocomplete="tel" required>
+            </div>
+            <div class="form-group">
+                <label for="client-service">Select Service</label>
+                <select id="client-service" required>
+                    <option value="">Choose a service</option>
+                    <option value="Fresh Cut - GH₵30">Fresh Cut – GH₵30</option>
+                    <option value="Fade - GH₵40">Fade – GH₵40</option>
+                    <option value="Beard Trim - GH₵20">Beard Trim – GH₵20</option>
+                    <option value="VIP Package - GH₵70">VIP Package – GH₵70</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="client-barber">Preferred Barber</label>
+                <select id="client-barber">
+                    <option value="Any available barber">Any available barber</option>
+                    <option value="Loki">Loki</option>
+                    <option value="Kwame">Kwame</option>
+                    <option value="Ama">Ama</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="client-date">Preferred Date</label>
+                <input type="date" id="client-date" required>
+            </div>
+            <div class="form-group">
+                <label for="client-time">Preferred Time</label>
+                <select id="client-time" required>
+                    <option value="">Choose a time</option>
+                    <option>8:00 AM</option><option>9:00 AM</option><option>10:00 AM</option>
+                    <option>11:00 AM</option><option>12:00 PM</option><option>1:00 PM</option>
+                    <option>2:00 PM</option><option>3:00 PM</option><option>4:00 PM</option>
+                    <option>5:00 PM</option><option>6:00 PM</option><option>7:00 PM</option>
+                </select>
+            </div>
+            <button class="submit-booking" onclick="submitBooking()" aria-label="Send booking via WhatsApp">
+                <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                Send Booking via WhatsApp
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- Scripts -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.8.1/dist/vanilla-tilt.min.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
