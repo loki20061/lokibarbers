@@ -1507,19 +1507,5 @@ html,body{overflow-x:hidden;
 @media only screen and (max-width: 768px) {
     body{
         position: relative;
-        background-color: #f0f0f0;
+        background-color: #020202;
     }
-    .mobile-bg-overlay {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100vh;
-        /*path to your image*/
-    background-image: url(images/hero1.jpg);
-    background-size: 100% 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    z-index: -1;
-    }
-}
