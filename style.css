@@ -10,7 +10,7 @@
     --dark: #0a0a0a;
     --darker: #050505;
     --light: #f5f5f5;
-    --gray: #888888;
+    white: #888888;
 }
 
 html {
@@ -163,7 +163,7 @@ body {
 
 .hero-content p {
     font-size: 18px;
-    color: var(--gray);
+    color: var(white);
     letter-spacing: 4px;
     text-transform: uppercase;
     margin-bottom: 40px;
@@ -221,7 +221,7 @@ body {
 }
 
 .section-sub {
-    color: var(--gray);
+    color: var(white);
     font-size: 16px;
     margin-bottom: 60px;
     letter-spacing: 2px;
@@ -278,7 +278,7 @@ body {
 }
 
 .service-card p {
-    color: var(--gray);
+    color: var(white);
     font-size: 14px;
     line-height: 1.6;
 }
@@ -311,7 +311,7 @@ body {
 }
 
 #about p {
-    color: var(--gray);
+    color: var(white);
     line-height: 1.8;
     margin-bottom: 30px;
 }
@@ -323,7 +323,7 @@ body {
 
 .about-list li {
     padding: 10px 0;
-    color: var(--gray);
+    color: var(white);
     display: flex;
     align-items: center;
     gap: 15px;
@@ -410,7 +410,7 @@ body {
 }
 
 .contact-card p {
-    color: var(--gray);
+    color: var(white);
     font-size: 14px;
 }
 
@@ -426,7 +426,7 @@ footer {
 }
 
 .footer-content p {
-    color: var(--gray);
+    color: var(white);
     margin: 15px 0;
     font-size: 14px;
     letter-spacing: 2px;
@@ -459,7 +459,7 @@ footer {
 }
 
 .footer-bottom {
-    color: var(--gray);
+    color: var(white);
     font-size: 12px;
     border-top: 1px solid rgba(255,255,255,0.05);
     padding-top: 20px;
@@ -567,7 +567,7 @@ footer {
 }
 
 .loader-content p {
-    color: var(--gray);
+    color: var(white);
     font-size: 12px;
     letter-spacing: 4px;
     text-transform: uppercase;
@@ -662,7 +662,7 @@ footer {
 }
 
 .testimonial-card p {
-    color: var(--gray);
+    color: var(white);
     line-height: 1.8;
     margin-bottom: 25px;
     font-style: italic;
@@ -693,7 +693,7 @@ footer {
 }
 
 .client span {
-    color: var(--gray);
+    color: var(white);
     font-size: 12px;
 }
 
@@ -745,7 +745,7 @@ footer {
 }
 
 .gallery-placeholder p {
-    color: var(--gray);
+    color: var(white);
     font-size: 14px;
     letter-spacing: 2px;
 }
@@ -851,7 +851,7 @@ body::before {
 }
 
 .stat-item p {
-    color: var(--gray);
+    color: var(white);
     font-size: 14px;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -956,7 +956,7 @@ body::before {
 .close-modal {
     background: transparent;
     border: none;
-    color: var(--gray);
+    color: var(white);
     font-size: 20px;
     cursor: pointer;
     transition: color 0.3s ease;
@@ -976,7 +976,7 @@ body::before {
 
 .form-group label {
     display: block;
-    color: var(--gray);
+    color: var(white);
     font-size: 12px;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -1141,7 +1141,7 @@ body::before {
 
 .pricing-features li {
     padding: 10px 0;
-    color: var(--gray);
+    color: var(white);
     display: flex;
     align-items: center;
     gap: 10px;
@@ -1159,7 +1159,7 @@ body::before {
 }
 
 .pricing-features li.disabled i {
-    color: var(--gray);
+    color: var(white);
 }
 
 .pricing-btn {
@@ -1348,7 +1348,7 @@ button:hover ~ .cursor {
 
 /* Scroll hint */
 .hero-scroll-hint{position:absolute;bottom:40px;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:10px;opacity:0;animation:fadeIn 1s ease 2s forwards}
-.hero-scroll-hint span{font-size:10px;letter-spacing:3px;color:var(--gray);text-transform:uppercase}
+.hero-scroll-hint span{font-size:10px;letter-spacing:3px;color:var(white);text-transform:uppercase}
 .scroll-line{width:1px;height:50px;background:linear-gradient(180deg,var(--gold),transparent);animation:scrollLine 2s ease infinite}
 @keyframes scrollLine{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform:scaleY(1);transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
 @keyframes fadeIn{to{opacity:1}}
@@ -1361,7 +1361,7 @@ button:hover ~ .cursor {
 .split-text:nth-child(4){animation-delay:.85s}
 .hero-gold{color:var(--gold);text-shadow:0 0 40px var(--gold-glow)}
 .hero-title{font-family:'Bebas Neue','Playfair Display',serif;font-size:clamp(72px,12vw,140px);line-height:.95;letter-spacing:4px;margin-bottom:28px}
-.hero-sub{font-size:13px;color:var(--gray);letter-spacing:5px;text-transform:uppercase;margin-bottom:44px;min-height:20px}
+.hero-sub{font-size:13px;color:var(white);letter-spacing:5px;text-transform:uppercase;margin-bottom:44px;min-height:20px}
 
 /* Glassmorphism cards */
 .service-card{background:var(--glass);backdrop-filter:blur(12px);border:1px solid var(--glass-border)}
@@ -1406,7 +1406,7 @@ button:hover ~ .cursor {
 .barber-info{padding:28px 24px;text-align:left}
 .barber-info h3{font-family:'Playfair Display',serif;font-size:22px;margin-bottom:4px}
 .barber-title{display:block;font-size:11px;color:var(--gold);letter-spacing:2px;text-transform:uppercase;margin-bottom:12px}
-.barber-info p{color:var(--gray);font-size:13px;line-height:1.7;margin-bottom:16px}
+.barber-info p{color:var(white);font-size:13px;line-height:1.7;margin-bottom:16px}
 .barber-skills{display:flex;flex-wrap:wrap;gap:8px}
 .barber-skills span{font-size:10px;letter-spacing:1px;text-transform:uppercase;color:var(--gold);border:1px solid var(--glass-border);padding:4px 12px;border-radius:20px;background:var(--gold-dim)}
 
@@ -1438,7 +1438,7 @@ button:hover ~ .cursor {
 .faq-question[aria-expanded="true"] i{transform:rotate(180deg)}
 .faq-answer{max-height:0;overflow:hidden;transition:max-height .4s ease,padding .3s ease}
 .faq-answer.open{max-height:300px;padding-bottom:20px}
-.faq-answer p{color:var(--gray);font-size:14px;line-height:1.8}
+.faq-answer p{color:var(white);font-size:14px;line-height:1.8}
 
 /* WhatsApp float */
 .whatsapp-float{position:fixed;bottom:30px;left:30px;width:58px;height:58px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;color:white;font-size:26px;text-decoration:none;z-index:9997;box-shadow:0 8px 25px rgba(37,211,102,.4);transition:var(--transition);animation:waFloat 3s ease-in-out infinite}
@@ -1523,4 +1523,11 @@ html,body{overflow-x:hidden;
     background-repeat: no-repeat;
     z-index: -1;
     }
+}
+
+p {
+    color: white;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 20px;
 }
